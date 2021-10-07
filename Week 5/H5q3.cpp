@@ -3,13 +3,7 @@
 
 using namespace std;
 
-int distance(double xpoint[], double ypoint[])
-{
-    double distance = 0;
-
-    distance = sqrt(pow((xpoint[0]-xpoint[1]),2) + pow((ypoint[0]-ypoint[1]),2));
-    cout<<"distance is : "<<distance;
-}
+int distance(double xpoint[], double ypoint[]);
 
 int main()
 {
@@ -29,4 +23,12 @@ int main()
     }
 
     distance(xpoint,ypoint);
+}
+
+int distance(double xpoint[], double ypoint[])
+{
+    double distance = 0;
+
+    distance = sqrt(pow((xpoint[0]-xpoint[1]),2) + pow((ypoint[0]-ypoint[1]),2));
+    cout<<"distance is : "<<distance;
 }
