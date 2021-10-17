@@ -1,28 +1,23 @@
-#include <iostream>
-using namespace std;
-
-int findscf()
-{
-int i, num1, num2, min, scf = 1;
-
-    cout<<"Input any 2 numbers :";
-    cin>>num1;
-    cin>>num2;
-
-  min = (num1<num2) ? num1 : num2;
-
-    for(i=1; i==2; i++)
-    {
-        if(num1 % i ==0 && num2 % i ==0)
-        {
-            scf = i;
-        }
-    }
-
-    cout<<"SCF of "<<num1<<" and "<<num2<<" is "<<scf;
-}
-
-int main()
-{
-    findscf();
-}
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+    int n1, n2, max_num, flag = 1;  
+    cout << " Enter two numbers: \n";  
+    cin >> n1 >> n2;      
+      
+    // use ternary operator to get the large number  
+    max_num = (n1 > n2) ? n1 : n2;  
+      
+    while (flag)    
+    {  
+        // if statement checks max_num is completely divisible by n1 and n2.  
+        if(max_num % n1 == 0 && max_num % n2 == 0)  
+        {  
+            cout << " The LCM of " <<n1 << " and " << n2 << " is " << max_num;  
+            break;  
+        }  
+        ++max_num; // update by 1 on each iteration  
+    }  
+    //return 0;  
+}  

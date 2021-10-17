@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
 
-    int max = numeric_limits<int>::min(); 
-    int min = numeric_limits<int>::max(); 
+    int min = numeric_limits<int>::min(); 
+    int max = numeric_limits<int>::max(); 
     int i = 1, n= 0, input = 0;
 
     cout<< "Input number of elements"<<endl;
