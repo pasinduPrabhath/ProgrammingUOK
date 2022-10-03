@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Converter</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(107, 200, 200);
+    }
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Convert number to squared number</h1>
+    <table>
+      <tr>
+        <td><p>Enter the Number</p></td>
+        <td><input type="number" id="inputNum" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="button" onclick="squareOf()">Answer</button></td>
+      </tr>
+    </table>
+    <script>
+      function squareOf() {
+        var number = document.getElementById("inputNum").value;
+        var answer = number * number;
+        alert("Square of " + number + " is " + answer);
+      }
+    </script>
+  </body>
+</html>

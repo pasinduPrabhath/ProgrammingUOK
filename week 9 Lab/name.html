@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <style></style>
+  <body>
+    <h1>Good evening!</h1>
+    1
+    <button id="btn">Click Me!</button>
+    <p>Hello There Welcome to Our Page</p>
+
+    <h2>Enter Your Details</h2>
+    <table>
+      <tr>
+        <td>
+          <label for="name">Name:</label>
+        </td>
+        <td>
+          <input id="inpt1" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Age">Age:</label>
+        </td>
+        <td>
+          <input id="inpt2" type="number" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="HomeTown">Hometown:</label>
+        </td>
+        <td>
+          <input id="inpt3" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="submit">Submit</button></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="lastInput" /></td>
+        <td><button id="lastButton">Click This!</button></td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    let css_defaults = {
+      color: "white",
+      background: "red",
+      position: "relative",
+      left: "120px",
+    };
+    let css_channged = {
+      color: "white",
+      background: "green",
+    };
+    $(document).ready(function () {
+      $("p").hide();
+      prprty1();
+      $("#btn").click(function () {
+        $("p").toggle();
+      });
+      $("#inpt1").click(function () {
+        $("#inpt1").css("background", "green");
+      });
+      $("#inpt2").click(function () {
+        $("#inpt2").css("background", "green");
+      });
+      $("#inpt3").click(function () {
+        $("#inpt3").css("background", "green");
+      });
+
+      $("#submit").click(prprty2);
+
+      function prprty1() {
+        $("#submit").css(css_defaults);
+      }
+      function prprty2() {
+        $("#submit").css(css_channged);
+      }
+      function showTextButton() {
+        // var lastinput = $("#lastInput").val();
+      }
+      $("#lastButton").click(function () {
+        var lastinput = $("#lastInput").val();
+        $("#lastButton").html(lastinput);
+      });
+    });
+  </script>
+</html>

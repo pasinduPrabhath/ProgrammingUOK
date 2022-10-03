@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Lens Poetry</title>
+  </head>
+  <style>
+    body {
+      background-color: #ccf2cc;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .intro {
+      margin-top: 50px;
+      border: 3px solid rgb(169, 202, 181);
+      font-family: "Open Sans", sans-serif;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px;
+      text-align: justify;
+    }
+    .topic {
+      color: rgb(24, 153, 97);
+      text-decoration: underline overline;
+      font-family: "Courier New", monospace;
+      text-align: center;
+    }
+    .gallery {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 50px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .slides {
+      display: none;
+      border: 3px solid rgb(16, 102, 47);
+    }
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 15px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .next {
+      right: 0;
+
+      border-radius: 3px 0 0 3px;
+    }
+    .pictureText {
+      color: #0b0404;
+      font-size: 17px;
+      padding: 20px 25px;
+      position: absolute;
+      top: 20;
+    }
+    .thePara {
+      margin-bottom: 35px;
+      border: 3px solid rgb(208, 233, 217);
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px;
+      font-size: 20px;
+      text-align: justify;
+    }
+    #description {
+      height: 100px;
+    }
+    h1 {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 900px;
+    }
+    .headers {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-image: url("https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/276995571_101880849151101_8577936040283132140_n.jpg?stp=dst-jpg_p180x540&_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=tKnjgdtC1A8AX_r_8bG&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9XD2jAzosyqLY6caOmA2rpaF1nDEKu9GUq1Z5aKcM0uA&oe=6303178E");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .headers-section {
+      position: relative;
+      padding: 15% 0 10%;
+      max-width: 840px;
+      margin-left: auto;
+      margin-right: auto;
+      color: rgb(26, 165, 197);
+      text-shadow: 1px 1px 4px rgba(2, 22, 22, 0.5);
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      font-size: 45px;
+    }
+    .video-Player {
+      margin-bottom: 35px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+    .zoom-img {
+      margin-bottom: 35px;
+    }
+    .contactUs {
+      border: 3px solid rgb(183, 233, 202);
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #8bdfc7;
+    }
+  </style>
+  <body>
+    <div class="bg-image"></div>
+    <div class="headers">
+      <div class="headers-section"><h1>Wild Lens Poetry</h1></div>
+    </div>
+    <div class="intro">
+      <div class="topic">
+        <h2>PHOTOS FROM OUR EXPEDITIONS</h2>
+      </div>
+      <p>
+        We rely on high quality photographs to identify and verify species
+        records before adding them to our database. Below you can see examples
+        of the variety of the beautiful biodiversity encountered during our
+        expeditions. We will be adding to this page frequently…be sure to check
+        back for updates!
+      </p>
+    </div>
+    <!-- Container for gallery -->
+    <div class="gallery">
+      <div class="slides">
+        <div class="pictureText">1 / 6</div>
+        <img
+          src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/292690781_7630756610331735_5525247948980932320_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0debeb&_nc_ohc=6LtF-CcGZToAX-YcB9L&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT95TFQVbRQ_92l7fh-vi6pstMVr302Z3zs2fVxeMtReRg&oe=63026C3E"
+          style="width: 100%"
+        />
+      </div>
+      <div class="slides">
+        <div class="pictureText">2 / 6</div>
+        <img
+          src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/284925057_7429767707097294_3411608888121242233_n.jpg?stp=dst-jpg_p526x395&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=jCkpXYKMWowAX97h9ev&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_BRGsKDA22ZhjHPItVkpDj6gN3_SETGwoaRrHu_i_A2Q&oe=63010A76"
+          style="width: 100%"
+        />
+      </div>
+      <div class="slides">
+        <div class="pictureText">3 / 6</div>
+        <img
+          src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/283994784_7415746288499436_3926905392497131031_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=vPTVCColEpoAX9h6dJP&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-iruANNWCU7tmwFSO0KvxrxMvOsNs7Sd1libnvEum1og&oe=6301C88D"
+          style="width: 100%"
+        />
+      </div>
+      <div class="slides">
+        <div class="pictureText">4 / 6</div>
+        <img
+          src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/279275430_7286046731469393_6419832663044563219_n.jpg?stp=dst-jpg_p526x395&_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=BUArK4IRcNYAX9JZEjL&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8l5RhW5KlglSw5utRclrAOn23B9Ob__kLv-Me8Bvs6kQ&oe=63029AE3"
+          style="width: 100%"
+        />
+      </div>
+      <div class="slides">
+        <div class="pictureText">5 / 6</div>
+        <img
+          src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/293989815_7672614796145916_4029804225306819513_n.jpg?stp=dst-jpg_p180x540&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=uIrI0xf9TCAAX-wn6p3&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9gKKS_ju4vL27J3iLNhLhfWuGXVN7zONDdOLFZygFF_A&oe=6302CE32"
+          style="width: 100%"
+        />
+      </div>
+      <div class="slides">
+        <div class="pictureText">6 / 6</div>
+        <img
+          src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/278442437_7215278768546190_6411239349545393736_n.jpg?stp=dst-jpg_p180x540&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=0YFV9SLCNxYAX_s3WFn&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_aIyO_PR8Ok6NWwXgzWviIiItQSm8hH6mG4kk1im_1DA&oe=6302F09A"
+          style="width: 100%"
+        />
+      </div>
+      <!-- buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Caption-->
+    </div>
+
+    <div class="thePara">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp; I love the photo seen here because of the
+        sharpness of the black and white that is caused by the jagged rock face.
+        The water flowing over the edge of the cliff cascades down forming
+        bright daggers before plunging into the pool below. You can see the
+        higher canyon wall sitting above the falls. This does a good job of
+        representing the 2,400 feet that we had descended on day one of this
+        22-mile hike. I hope you enjoy the contrasting effects of this photo!
+      </p>
+    </div>
+    <div align="center" class="video-Player">
+      <iframe
+        width="852"
+        height="479"
+        src="https://www.youtube.com/embed/hTddDiwX9u4?autoplay=1"
+        title="Wildlife in Sri Lanka"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div align="center" class="zoom-img">
+      <img
+        id="yellowBird"
+        width="40%"
+        src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/276270640_101896539149532_5440963759996231767_n.jpg?stp=dst-jpg_p180x540&_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=M-1AnrxLM4sAX_T6VxY&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-9zIA3ztmfUUJEIoT5Sf3nyg-9Poy8OWarI0aLYgCJLw&oe=63022A16"
+        alt="yellow-bird"
+        onclick="zoomClickCheck()"
+      />
+      <table>
+        <td><button onclick="zoomOut()">-</button></td>
+        <td><button onclick="zoomIn()">+</button></td>
+      </table>
+    </div>
+    <div align="center" class="contactUs">
+      <form name="form1">
+        <h3>Contact Us</h3>
+        <label class="forms" for="fname">Name</label><br />
+        <input type="text" id="name" name="fname" /><br /><br />
+        <label class="forms" for="number">Telephone Number</label><br />
+        <input type="number" id="number" /><br /><br />
+        <label class="forms" for="email">Email</label><br />
+        <input type="email" multiple id="email" name="text1" /><br /><br />
+        <label class="forms" for="description">Your Thoughts</label><br />
+        <input type="text" id="description" /><br /><br />
+      </form>
+      <button onclick="validateInput()">Submit</button><br /><br />
+    </div>
+    <div class="bottom-img">
+      <img
+        id="bottomImg"
+        src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/276283002_101878195818033_917672802698568026_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jIW-wzPYfWMAX9ttBVR&_nc_oc=AQlBQFgZAVEf8UNanjQeKt-zas8QgGcL1ghhuiVMWNemvg6XrbkWnXp_TyGRRaEtTdg&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9gX7XJjshF6sPz-SuUrAGN-TZq8-ORvGdUi1uRG5ZDHQ&oe=6302A597"
+        style="width: 10%"
+        alt="logo"
+        onclick="moveRight()"
+      />
+    </div>
+  </body>
+  <script>
+    var indexSlide = 1;
+    showSlides(indexSlide);
+    function plusSlides(n) {
+      showSlides((indexSlide += n));
+    }
+    function currentSlide(n) {
+      showSlides((indexSlide = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        indexSlide = 1;
+      }
+      if (n < 1) {
+        indexSlide = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[indexSlide - 1].style.display = "block";
+    }
+
+    function moveRight() {
+      var image_ = document.getElementById("bottomImg");
+      //   image_.style.position = "relative";
+      image_.style.marginLeft = "90%";
+    }
+
+    function zoomIn() {
+      var yellowImg = document.getElementById("yellowBird");
+      var currWidth = yellowImg.clientWidth;
+      yellowImg.style.width = currWidth + 100 + "px";
+    }
+    function zoomOut() {
+      var yellowImg = document.getElementById("yellowBird");
+      var currWidth = yellowImg.clientWidth;
+      yellowImg.style.width = currWidth - 100 + "px";
+    }
+    function validateInput() {
+      var inputMail = document.getElementById("email").value;
+      var inputName = document.getElementById("name").value;
+      var inputTele = document.getElementById("number").value;
+      var inputDes = document.getElementById("description").value;
+
+      if (
+        inputMail.length == 0 ||
+        inputName.length == 0 ||
+        inputTele.length == 0 ||
+        inputDes.length == 0
+      ) {
+        alert("Please fill out all the details!");
+      }
+      if (inputTele.length != 10) {
+        alert("Please enter a correct phone number!");
+      } else {
+        alert("Thank you for your response!");
+      }
+    }
+  </script>
+</html>

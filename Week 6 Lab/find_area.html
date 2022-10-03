@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area of a Rectangle</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(13, 215, 215);
+    }
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Find the area of a rectangle</h1>
+    <table>
+      <tr>
+        <td>
+          <label for="Entry of length">Enter the length of the rectangle</label>
+        </td>
+        <td><input type="number" id="length" /></td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Entry of width">Enter the width of the rectangle</label>
+        </td>
+        <td><input type="number" id="width" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="calcArea()">Calculate the Area</button></td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    function calcArea() {
+      var length = document.getElementById("length").value;
+      var width = document.getElementById("width").value;
+      var area = length * width;
+      alert("Area of the rectangle is " + area);
+    }
+  </script>
+</html>

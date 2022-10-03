@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calcs</title>
+    <style>
+      body {
+        background-color: rgb(78, 204, 204);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Calculations</h3>
+    <table>
+      <tr>
+        <td><label for="number1">Enter the Number 1</label></td>
+        <td><input type="number" id="number01" /></td>
+      </tr>
+      <tr>
+        <td><label for="number2">Enter the Number 2</label></td>
+        <td><input type="number" id="number02" /></td>
+      </tr>
+      <tr>
+        <td>
+          <button id="multiply" onclick="multiplyNums()">Multiply</button>
+        </td>
+        <td><button id="divide" onclick="divideNum()">Divide</button></td>
+      </tr>
+    </table>
+    <script>
+      function multiplyNums() {
+        var num1 = document.getElementById("number01").value;
+        var num2 = document.getElementById("number02").value;
+        if (document.getElementById("number01").value.length == 0) {
+          num1 = null;
+        }
+        if (document.getElementById("number02").value.length == 0) {
+          num1 = null;
+        }
+        if (num1 == null || num2 == null) {
+          alert("Enter the 2 numbers first");
+        } else {
+          var multiply = num1 * num2;
+          alert(
+            "Multiplication of " + num1 + " by " + num2 + " is " + multiply
+          );
+        }
+      }
+      function divideNum() {
+        var num1 = document.getElementById("number01").value;
+        var num2 = document.getElementById("number02").value;
+        var division = num1 / num2;
+        alert("Division of " + num1 + " by " + num2 + " is " + division);
+      }
+    </script>
+  </body>
+</html>

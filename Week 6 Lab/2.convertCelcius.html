@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <style>
+      body {
+        background-color: rgb(95, 169, 169);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Celsius to Fahrenheit Converter</h2>
+    <div>
+      <table>
+        <tr>
+          <td><label for="CelciusValue">Enter the value in Celcius</label></td>
+          <td><input type="number" id="celValue" /></td>
+        </tr>
+        <tr>
+          <td><label for="Value in Fahrenheit">Value in Fahrenheit</label></td>
+          <td><p id="value">0</p></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button id="convert" onclick="convertCelcius()">Convert</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function convertCelcius() {
+        var celsius = document.getElementById("celValue").value;
+        if ((celsius = document.getElementById("celValue").value.length == 0)) {
+          alert("Enter the number first");
+        } else {
+          var celsius = document.getElementById("celValue").value;
+          var valInFar = (celsius * 9) / 5 + 32;
+          document.getElementById("value").innerHTML = valInFar;
+        }
+      }
+    </script>
+  </body>
+</html>

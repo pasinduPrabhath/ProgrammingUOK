@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <style>
+      body {
+        background-image: url("https://cdn.woorise.com/template/wp-content/uploads/sites/62/2021/02/online-registration-background.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+      }
+      h1 {
+        color: rgb(21, 22, 22);
+        text-align: center;
+        font-size: 28px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+      }
+      label{
+        font-size: 18px;
+        color: rgb(68, 43, 15);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 500;
+      }
+      input{
+        width: 290px;
+        margin: 10px;
+        padding: 2px;
+        display: flex;
+        border: 2;
+        box-sizing: border-box;
+      }
+      #buttons{
+        text-align: right;
+      }
+      button{
+        background-color: rgb(176, 219, 240);
+        width: 60px;
+        color: rgb(54, 38, 38);
+        padding: 3px;
+        margin: 2px;
+        border-style: outset;
+        border-radius: 20px;
+      }
+      #checkbox{
+        position: absolute;
+      }
+  
+      
+    </style>
+  </head>
+  <body>
+    <h1>Student Login Form</h1>
+    <form action="">
+    <table>
+      <tr><td>
+        <label for="Username">Username</td> <td><input type="Username" /></label
+        ></td><br />
+      </tr>
+      <tr><td>
+        <label for="Password">Password</td><td><input type="password" /></label
+        ></td> <br />
+      </tr>
+      <tr><td>
+        <label for="Department">Department </td><td><input type="Text" /></label
+        ></td><br />
+      </tr>
+      <tr><td>
+        <label for="Level">Level</td><td><input type="number" /></label
+        ></td> <br />
+      </tr>
+      <tr><td id="checkbox"><input type="checkbox"></td><td style="text-align: center;"><label for="remember">Remember Me</label></td></tr>
+      <tr id = "buttons">
+        <td><button>Cancel</button> </td>
+        <td><button>Login</button></td> 
+      </tr> 
+    </table>
+</form>
+    
+   
+  </body>
+</html>
